@@ -43,7 +43,9 @@ public class BooksTestDrive {
     myBooks[2] = new Books("The Java Cookbook", "ian");
 
     for (int x = 0; x < myBooks.length; x++) {
-      System.out.println(myBooks[x].getTitle() + " by " + myBooks[x].getAuthor());
+      StringBuilder sB = new StringBuilder();
+      System.out.println(
+          sB.append(myBooks[x].getTitle()).append(" by ").append(myBooks[x].getAuthor()));
     }
 
   }
