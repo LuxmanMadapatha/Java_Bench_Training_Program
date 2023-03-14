@@ -1,13 +1,29 @@
 package bankaccount;
 
+import java.util.ArrayList;
+
 public class Bank {
 
-  BankAccount[] BankAccounts = new BankAccount[1000];
+  ArrayList<BankAccount> BankAccounts = new ArrayList<BankAccount>();
+  ArrayList<Customer> Customers = new ArrayList<Customer>();
 
+
+  public ArrayList<BankAccount> getBankAccounts() {
+    return BankAccounts;
+  }
+
+  public void setBankAccounts(BankAccount BA) {
+    BankAccounts.add(BA);
+  }
+
+  public ArrayList<Customer> getCustomers() {
+    return Customers;
+  }
+
+  public void setCustomers(Customer customer) {
+    Customers.add(customer);
+
+
+  }
 }
 
-class bankAccounts {
-
-  String account;
-  String customeName;
-}
