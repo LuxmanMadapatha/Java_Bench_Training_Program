@@ -2,6 +2,16 @@ package bankaccount;
 
 public class BankAccount {
 
+  @Override
+  public String toString() {
+    return "BankAccount{" +
+        "accountNumber=" + accountNumber +
+        ", accountHolderName='" + accountHolderName + '\'' +
+        ", accountBalance=" + accountBalance +
+        ", accountType='" + accountType + '\'' +
+        '}';
+  }
+
   private int accountNumber;
   private String accountHolderName;
   private double accountBalance;

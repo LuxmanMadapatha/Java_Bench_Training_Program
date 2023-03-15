@@ -1,5 +1,6 @@
 package bankaccount;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class App {
 
@@ -10,7 +11,10 @@ public class App {
     B.setBankAccounts(new BankAccount(002, "Kaushal",1000000.0, "Savings"));
     System.out.println(B.getBankAccounts());
 
+    Scanner myObj = new Scanner(System.in);
 
+  }
      }
 
-}
+
+
