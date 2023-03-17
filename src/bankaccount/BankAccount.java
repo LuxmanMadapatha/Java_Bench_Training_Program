@@ -23,6 +23,18 @@ public class BankAccount {
     this.accountHolderName = accountHolderName;
     this.accountBalance = accountBalance;
     this.accountType = accountType;
+
+  }
+
+  public double deposit(double funds) {
+    this.accountBalance = this.accountBalance + funds;
+    return this.accountBalance;
+
+  }
+
+  public double withdraw(int funds) {
+    this.accountBalance = this.accountNumber - funds;
+    return this.accountBalance;
   }
 
   public int getAccountNumber() {

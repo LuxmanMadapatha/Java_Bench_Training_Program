@@ -12,19 +12,19 @@ public class CreateAccount {
     // String input
     String name = myObj.nextLine();
     String type = myObj.nextLine();
-//    int account = myObj.nextInt();
+    //int account = myObj.nextInt();
 
 //    Scanner sc = new Scanner(System.in);
-    int account;
+    int account = 0;
     do {
-      System.out.println("Please enter a positive number!");
+      //System.out.println("Please enter a positive number!");
       while (!myObj.hasNextInt()) {
-        System.out.println("That's not a number!");
+        //System.out.println("That's not a number!");
         myObj.next(); // this is important!
       }
       account = myObj.nextInt();
     } while (account <= 0);
-    System.out.println("Thank you! Got " + account);
+    //System.out.println("Thank you! Got " + account);
     double balance = myObj.nextDouble();
 
     // Output input by user
@@ -34,7 +34,7 @@ public class CreateAccount {
     System.out.println("Balance: " + balance);
 
     Bank B = new Bank();
-    B.setBankAccounts(new BankAccount(account,name,balance,type));
+    B.setBankAccounts(new BankAccount(account, name, balance, type));
     System.out.println(B.getBankAccounts());
 
 
