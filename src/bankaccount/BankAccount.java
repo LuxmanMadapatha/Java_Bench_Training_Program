@@ -32,8 +32,8 @@ public class BankAccount {
 
   }
 
-  public double withdraw(int funds) {
-    this.accountBalance = this.accountNumber - funds;
+  public double withdraw(double withdraw) {
+    this.accountBalance = this.accountBalance - withdraw;
     return this.accountBalance;
   }
 

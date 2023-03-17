@@ -18,6 +18,11 @@ public class App {
     System.out.println(B.getBankAccounts().get(account));
     B.getBankAccounts().get(account).deposit(funds);
     System.out.println(B.getBankAccounts().get(account));
+    System.out.println("Enter withdraw amount and accountNumber");
+    double withdraw = myObj.nextDouble();
+    account = myObj.nextInt();
+    B.getBankAccounts().get(account).withdraw(withdraw);
+    System.out.println(B.getBankAccounts().get(account));
 
 
 
