@@ -1,5 +1,7 @@
 package bankaccount;
 
+import java.util.ArrayList;
+
 public class BankAccount {
 
   @Override
@@ -9,6 +11,7 @@ public class BankAccount {
         ", accountHolderName='" + accountHolderName + '\'' +
         ", accountBalance=" + accountBalance +
         ", accountType='" + accountType + '\'' +
+        ", Transactions=" + Transactions +
         '}';
   }
 
@@ -16,6 +19,15 @@ public class BankAccount {
   private String accountHolderName;
   private double accountBalance;
   private String accountType;
+  ArrayList<Transaction> Transactions = new ArrayList<Transaction>();
+
+  public ArrayList<Transaction> getTransactions() {
+    return Transactions;
+  }
+
+  public void setTransactions(ArrayList<Transaction> transactions) {
+    Transactions = transactions;
+  }
 
   public BankAccount(int accountNumber, String accountHolderName, double accountBalance,
       String accountType) {
@@ -68,10 +80,7 @@ public class BankAccount {
   public void setAccountType(String accountType) {
     this.accountType = accountType;
   }
-
-  public static void main(String[] args) {
-
-  }
 }
+
 
 
