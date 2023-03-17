@@ -16,6 +16,17 @@ public class Vehicle {
     this.price = price;
   }
 
+  @Override
+  public String toString() {
+    return "Vehicle{" +
+        "make='" + make + '\'' +
+        ", model='" + model + '\'' +
+        ", year=" + year +
+        ", color='" + color + '\'' +
+        ", price=" + price +
+        '}';
+  }
+
   public String getMake() {
     return make;
   }
