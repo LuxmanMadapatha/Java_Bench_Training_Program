@@ -56,11 +56,5 @@ public class Vehicle {
     this.price = price;
   }
 
-
-
-
-  public static void main(String[] args) {
-
-  }
-
 }
+
