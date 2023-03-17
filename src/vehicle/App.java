@@ -10,7 +10,7 @@ public class App {
     inventory.setVehicle(new Vehicle("Ford", "E40", 1970, "Maroon", 30000.00));
 
     System.out.println("Average vehicle price: $" + inventory.getAveragePrice()+"\n");
-    System.out.println("Filered vehicles:" + inventory.searchByMakeAndModel("Ford", "E20").toString());
+    System.out.println("Filered vehicles:\n" + inventory.searchByMakeAndModel("Ford", "E20").toString());
 
   }
 
