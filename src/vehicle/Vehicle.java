@@ -2,11 +2,11 @@ package vehicle;
 
 public class Vehicle {
 
-  String make;
-  String model;
-  int year;
-  String color;
-  double price;
+  private String make;
+  private String model;
+  private int year;
+  private String color;
+  private double price;
 
   public Vehicle(String make, String model, int year, String color, double price) {
     this.make = make;

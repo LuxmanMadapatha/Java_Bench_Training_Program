@@ -11,7 +11,7 @@ public class Inventory {
   public double getAveragePrice() {
     double total = 0;
     for (Vehicle vehicle : Vehicles) {
-      total += vehicle.price;
+      total += vehicle.getPrice();
     }
     return total / Vehicles.size();
   }
@@ -19,7 +19,7 @@ public class Inventory {
   public ArrayList<Vehicle> searchByMakeAndModel(String make, String model) {
     for (Vehicle vehicle : Vehicles) {
 
-      if (vehicle.make.equals(make) && vehicle.model.equals(model)) {
+      if (vehicle.getMake().equals(make) && vehicle.getModel().equals(model)) {
         VehiclesFiltered.add(vehicle);
       }
     }
