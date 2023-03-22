@@ -4,6 +4,22 @@ import java.util.ArrayList;
 
 public class BankAccount {
 
+  public int accountNumber;
+  ArrayList<Transaction> Transactions = new ArrayList<Transaction>();
+  private String accountHolderName;
+  private double accountBalance;
+  private String accountType;
+
+  public BankAccount(int accountNumber, String accountHolderName, double accountBalance,
+      String accountType) {
+
+    this.accountNumber = accountNumber;
+    this.accountHolderName = accountHolderName;
+    this.accountBalance = accountBalance;
+    this.accountType = accountType;
+
+  }
+
   @Override
   public String toString() {
     return "BankAccount{" +
@@ -15,27 +31,12 @@ public class BankAccount {
         '}';
   }
 
-  private int accountNumber;
-  private String accountHolderName;
-  private double accountBalance;
-  private String accountType;
-  ArrayList<Transaction> Transactions = new ArrayList<Transaction>();
-
   public ArrayList<Transaction> getTransactions() {
     return Transactions;
   }
 
   public void setTransactions(ArrayList<Transaction> transactions) {
     Transactions = transactions;
-  }
-
-  public BankAccount(int accountNumber, String accountHolderName, double accountBalance,
-      String accountType) {
-    this.accountNumber = accountNumber;
-    this.accountHolderName = accountHolderName;
-    this.accountBalance = accountBalance;
-    this.accountType = accountType;
-
   }
 
   public double deposit(double funds) {
