@@ -2,12 +2,12 @@ package vehicle;
 
 public class Car extends Vehicle {
 
-  int numDoors;
-  int numPassengers;
+  short numDoors;
+  short numPassengers;
   boolean isConvertible;
 
-  public Car(String make, String model, int year, String color, double price, int numDoors,
-      int numPassengers, boolean isConvertible) {
+  public Car(String make, String model, int year, String color, double price, short numDoors,
+      short numPassengers, boolean isConvertible) {
     super(make, model, year, color, price);
     this.numDoors = numDoors;
     this.numPassengers = numPassengers;
@@ -18,7 +18,7 @@ public class Car extends Vehicle {
     return numDoors;
   }
 
-  public void setNumDoors(int numDoors) {
+  public void setNumDoors(short numDoors) {
     this.numDoors = numDoors;
   }
 
@@ -26,7 +26,7 @@ public class Car extends Vehicle {
     return numPassengers;
   }
 
-  public void setNumPassengers(int numPassengers) {
+  public void setNumPassengers(short numPassengers) {
     this.numPassengers = numPassengers;
   }
 
