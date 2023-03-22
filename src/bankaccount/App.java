@@ -36,6 +36,24 @@ public class App {
 
     System.out.println("Your current account balance details:\n" + B.getBankAccounts().get(account - 1) + "\n");
 
+    double deposit = 0.00;
+    do {
+      System.out.println("Please enter the amount to deposit");
+      while (!myObj.hasNextDouble()) {
+        System.out.println("That's not a valid amount!");
+        myObj.next();
+      }
+      deposit = myObj.nextDouble();
+
+      if (deposit <= 0.01){
+        System.out.println("Funds to add cannot be a negative number or less than 0.01!\n");
+      }
+
+    } while (deposit <= 0.01);
+
+    B.getBankAccounts().get(account - 1).deposit(deposit);
+    System.out.println("Your new account balance details:\n" + B.getBankAccounts().get(account - 1));
+
     double withdraw = 0.00;
     do {
       System.out.println("Please enter the withdrawal amount");
@@ -53,5 +71,8 @@ public class App {
 
     B.getBankAccounts().get(account - 1).withdraw(withdraw);
     System.out.println("Your new account balance details:\n" + B.getBankAccounts().get(account - 1));
+
+
+
   }
 }
