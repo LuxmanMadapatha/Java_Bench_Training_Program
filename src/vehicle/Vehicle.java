@@ -1,6 +1,6 @@
 package vehicle;
 
-public class Vehicle {
+public abstract class Vehicle {
 
   private String make;
   private String model;
