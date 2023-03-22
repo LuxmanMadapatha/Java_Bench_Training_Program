@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 /*
 Requirements for collection type:
-Duplicates not needed
+Duplicates [keys] not needed
 Key value pair
 Get and put methods
-Speed
+Speed is more important than memory usage
 key based alpha ordering not required
+Indexing not required
  */
 public class App {
 
