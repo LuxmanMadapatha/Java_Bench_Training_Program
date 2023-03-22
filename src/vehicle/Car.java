@@ -2,9 +2,9 @@ package vehicle;
 
 public class Car extends Vehicle {
 
-  short numDoors;
-  short numPassengers;
-  boolean isConvertible;
+  private short numDoors;
+  private short numPassengers;
+  private boolean isConvertible;
 
   public Car(String make, String model, int year, String color, double price, short numDoors,
       short numPassengers, boolean isConvertible) {
@@ -12,6 +12,20 @@ public class Car extends Vehicle {
     this.numDoors = numDoors;
     this.numPassengers = numPassengers;
     this.isConvertible = isConvertible;
+  }
+
+  @Override
+  public String toString() {
+    return "Car{" +
+        "make='" + getMake() + '\'' +
+        ", model='" + getModel() + '\'' +
+        ", year=" + getYear() +
+        ", color='" + getColor() + '\'' +
+        ", price=" + getPrice() +
+        "numDoors=" + numDoors +
+        ", numPassengers=" + numPassengers +
+        ", isConvertible=" + isConvertible +
+        '}';
   }
 
   public int getNumDoors() {
