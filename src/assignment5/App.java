@@ -9,8 +9,9 @@ Requirements for collection type:
 Duplicate Strings may be required
 Key value pair not required
 Insert and delete method required
-Alpha sorting required
+"Natural" sorting required
 Simple implementation
+Choose arrayList
  */
 
 public class App {

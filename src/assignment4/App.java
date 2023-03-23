@@ -11,8 +11,9 @@ Duplicates [keys] not needed
 Key value pair
 Get and put methods
 Speed is more important than memory usage
-key based alpha ordering not required
+key based "natural" ordering not required
 Indexing not required
+Choose Hashmap
  */
 public class App {
 

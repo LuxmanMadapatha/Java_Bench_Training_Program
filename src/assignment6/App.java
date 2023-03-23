@@ -7,7 +7,8 @@ import java.util.Scanner;
 Requirements for collection type:
 Key value pair not required
 Insert and delete method required
-Linked list type data structure
+"Natural ordering" not required
+Choose linked list type data structure
  */
 
 public class App {
