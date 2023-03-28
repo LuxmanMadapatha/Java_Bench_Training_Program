@@ -4,11 +4,14 @@ import java.util.ArrayList;
 
 public class BankAccount {
 
-  public int accountNumber;
+//  public int accountNumber;
+  private int accountNumber;
   ArrayList<Transaction> Transactions = new ArrayList<Transaction>();
   private String accountHolderName;
   private double accountBalance;
   private String accountType;
+
+
 
   public BankAccount(int accountNumber, String accountHolderName, double accountBalance,
       String accountType) {
@@ -81,6 +84,8 @@ public class BankAccount {
   public void setAccountType(String accountType) {
     this.accountType = accountType;
   }
+
+
 }
 
 

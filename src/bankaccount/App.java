@@ -24,7 +24,7 @@ public class App {
       }
       account = myObj.nextInt();
       int finalAccount = account;
-      checkAccount = B.getBankAccounts().stream().filter(l -> l.accountNumber == finalAccount)
+      checkAccount = B.getBankAccounts().stream().filter(l -> l.getAccountNumber() == finalAccount)
           .findFirst().orElse(null);
 
       if (checkAccount == null) {
