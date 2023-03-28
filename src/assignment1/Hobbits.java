@@ -10,7 +10,10 @@ class Hobbits {
     while (z < 3) {
 
       h[z] = new Hobbits();
-      h[z].name = "bilbo";
+
+      if (z== 0) {
+        h[z].name = "bilbo";
+      }
 
       if (z == 1) {
         h[z].name = "frodo";
@@ -27,3 +30,4 @@ class Hobbits {
     }
   }
 }
+
