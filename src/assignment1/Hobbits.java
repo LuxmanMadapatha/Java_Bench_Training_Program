@@ -23,8 +23,7 @@ class Hobbits {
         h[z].name = "sam";
       }
 
-      System.out.print(h[z].name + " is a ");
-      System.out.println("good Hobbit name");
+      System.out.print(h[z].name + " is a good Hobbit name\n");
 
       z = z + 1;
     }
